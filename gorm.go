@@ -150,7 +150,7 @@ func (s *Store) Create(info oauth2.TokenInfo) error {
 
 // RemoveByCode delete the authorization code
 func (s *Store) RemoveByCode(code string) error {
-	return s.db.Table(s.tableName).Where("code = ?", code).Update("code", "").Error
+	return s.db.Table(s.tableName).Where("code = ?", code).Delete(StoreItem{}).Error
 }
 
 // RemoveByAccess use the access token to delete the token information
