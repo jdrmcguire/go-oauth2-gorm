@@ -11,8 +11,8 @@ import (
 	_ "github.com/jinzhu/gorm/dialects/mysql"
 	_ "github.com/jinzhu/gorm/dialects/postgres"
 	_ "github.com/jinzhu/gorm/dialects/sqlite"
-	"gopkg.in/oauth2.v3"
-	"gopkg.in/oauth2.v3/models"
+	"github.com/jdrmcguire/oauth2"
+	"github.com/jdrmcguire/oauth2/models"
 )
 
 var noUpdateContent = "No content found to be updated"
