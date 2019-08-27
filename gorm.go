@@ -7,8 +7,8 @@ import (
 	"os"
 	"time"
 
-	"github.com/jdrmcguire/oauth2"
-	"github.com/jdrmcguire/oauth2/models"
+	"gopkg.in/oauth2.v3"
+	"gopkg.in/oauth2.v3/models"
 	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/mysql"
 	_ "github.com/jinzhu/gorm/dialects/postgres"
